@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "ManageCourse";
+    Layout = "~/Views/TrainingStaff/_LayoutPage1.cshtml";
+}
+
+<div>_______________________________________________________________________________________</div>
+<div style="text-align: center; font-size: xx-large; color: white">COURSE LIST</div>
+<div>_______________________________________________________________________________________</div>
+<div class="list">
+    <table style="width: 100%; color: white">
+        <tr>
+            <th>Course ID</th>
+            <th>Course name</th>
+            <th>Course Topic</th>
+            <th>Start date</th>
+            <th>Action</th>
+        </tr>
+        <tr style="text-align: center">
+            <td>1970</td>
+            <td>Application Development</td>
+            <td>Code</td>
+            <td>26/05/2021</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "EditCourse", "TrainingStaff")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+        <tr style="text-align: center">
+            <td>1939</td>
+            <td>Computing Research Project</td>
+            <td>Research</td>
+            <td>18/05/2021</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "EditCourse", "TrainingStaff")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+        <tr style="text-align: center">
+            <td>VOV131</td>
+            <td>Voviman 3</td>
+            <td>P.E.</td>
+            <td>12/04/2021</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "EditCourse", "TrainingStaff")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url('../../images/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("FPT", "Home", "Account", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li style="float: right">@Html.ActionLink("Login", "Login", "Account")</li>
+            <li style="float: right">@Html.ActionLink("Register", "Register", "Account")</li>
+        </ul>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

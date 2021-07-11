@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "ManageCategory";
+    Layout = "~/Views/TrainingStaff/_LayoutPage1.cshtml";
+}
+
+<div>_______________________________________________________________________________________</div>
+<div style="text-align: center; font-size: xx-large; color: white">CATEGORY LIST</div>
+<div>_______________________________________________________________________________________</div>
+<div class="list">
+    <table style="width: 100%; color: white">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        <tr style="text-align: center">
+            <td>LEVEL 1</td>
+            <td>NULL</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "EditCategory", "TrainingStaff")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+        <tr style="text-align: center">
+            <td>LEVEL 2</td>
+            <td>NULL</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "EditCategory", "TrainingStaff")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+        <tr style="text-align: center">
+            <td>LEVEL 3</td>
+            <td>NULL</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "EditCategory", "TrainingStaff")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+    </table>
+</div>

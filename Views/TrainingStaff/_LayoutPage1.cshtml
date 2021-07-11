@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                }
+        img{
+            width:100px;
+            height: 100%;
+        }
+        a{
+            text-decoration:none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <ul>
+            <li>@Html.ActionLink("FPT", "Home", "TrainingStaff", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Home", "Home", "TrainingStaff")</li>
+            <li>@Html.ActionLink("Account", "ManageAccount", "TrainingStaff")</li>
+            <li>@Html.ActionLink("Topic", "ManageTopic", "TrainingStaff")</li>
+            <li>@Html.ActionLink("Course", "ManageCourse", "TrainingStaff")</li>
+            <li>@Html.ActionLink("Category", "ManageCategory", "TrainingStaff")</li>
+        </ul>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

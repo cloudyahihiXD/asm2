@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Account/_LayoutPage1.cshtml";
+}
+
+<h1>REGISTER FORM</h1>
+
+<div class="containerw3layouts-agileits">
+
+    <form action="#" method="post" id="demo" novalidate>
+        <table>
+            <tr>
+                <td style="color:white">Email: </td>
+                <td>
+                    <div class="form-group agileits-w3layouts">
+                        <input type="text" class="form-control agileinfo textbox" name="Username" required placeholder="Username">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white">Password: </td>
+                <td>
+                    <div class="form-group w3-agile password">
+                        <input type="password" class="form-control w3-agileits textbox" name="Password" required placeholder="Password">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white">Confirm password: </td>
+                <td>
+                    <div class="form-group w3-agile password">
+                        <input type="password" class="form-control w3-agileits textbox" name="ConfirmPassword" required placeholder="Confirm Password">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="form-group w3-agile submit">
+                        <button class="btn" type="submit">Register</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+
+<!-- Necessary-JavaScript-Files-&-Links -->
+<!-- Default-JavaScript -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/validify.js"></script>
+<script>
+    $("#demo").validify({
+        onSubmit: function (e, $this) {
+            $this.find('.alert').removeClass('hidden')
+        },
+        onFormSuccess: function (form) {
+            console.log("Form is valid now!")
+        },
+        onFormFail: function (form) {
+            console.log("Form is not valid :(")
+        }
+    });
+</script>
+
+<!-- //Necessary-JavaScript-Files-&-Links -->

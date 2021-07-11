@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "ManageAccount";
+    Layout = "~/Views/TrainingStaff/_LayoutPage1.cshtml";
+}
+
+<div>_______________________________________________________________________________________</div>
+<div style="text-align: center; font-size: xx-large; color: white">ACCOUNT LIST</div>
+<div>_______________________________________________________________________________________</div>
+<div class="list" ">
+    <table style="width: 100%; color: white">
+        <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Account role</th>
+            <th>Action</th>
+        </tr>
+        <tr style="text-align: center">
+            <td>Karen</td>
+            <td>KaReN123</td>
+            <td>123456</td>
+            <td>Training staff</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "EditAccount", "TrainingStaff")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+        <tr style="text-align: center">
+            <td>Cheems</td>
+            <td>cHeEmS</td>
+            <td>123456</td>
+            <td>Training staff</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "EditAccount", "TrainingStaff")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+        <tr style="text-align: center">
+            <td>Ira</td>
+            <td>Irina</td>
+            <td>123456</td>
+            <td>Trainer</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "EditAccount", "TrainingStaff")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+    </table>
+</div>

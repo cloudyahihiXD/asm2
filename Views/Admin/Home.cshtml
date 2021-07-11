@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Admin/_LayoutPage1.cshtml";
+}
+<div style="text-align: center; font-size: larger; color: white">WELCOM TO ADMIN PAGE</div>
+<div style="text-align: center; font-size: large; color: white">Account list</div>
+<div class="list" ">
+    <table style="width:100%; color:white">
+        <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Account type</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Karen</td>
+            <td>KaReN123</td>
+            <td>123456</td>
+            <td>Training staff</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "Edit", "Home")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Cheems</td>
+            <td>cHeEmS</td>
+            <td>123456</td>
+            <td>Training staff</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "Edit", "Home")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Ira</td>
+            <td>Irina</td>
+            <td>123456</td>
+            <td>Trainer</td>
+            <td>
+                <a>@Html.ActionLink("Edit", "Edit", "Home")</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/TrainingStaff/_LayoutPage1.cshtml";
+}
+
+<h2 style="color: white; text-align:center">Welcome to training staff home page</h2>
+<div style="text-align: center; font-size: xx-large;">
+    <div>
+        <a>@Html.ActionLink("Add new account", "AddAccount", "TrainingStaff")</a>
+        <img src="~/images/account.png" />
+    </div>
+    <div>
+        <img src="~/images/topic.png" />
+        <a>@Html.ActionLink("Add new topic", "AddTopic", "TrainingStaff")</a>
+    </div>
+    <div>
+        <a>@Html.ActionLink("Add new course", "AddCourse", "TrainingStaff")</a>
+        <img src="~/images/course.png" />
+    </div>
+    <div>
+        <img src="~/images/category.png" />
+        <a>@Html.ActionLink("Add new category", "AddCategory", "TrainingStaff")</a>
+    </div>
+</div>
